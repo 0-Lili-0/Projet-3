@@ -1,0 +1,77 @@
+// import
+@import "sass/utils/variables";
+@import "sass/base/base";
+@import "sass/components/components";
+@import "sass/layout/footer";
+@import "sass/layout/header";
+@import "sass/pages/acceuil";
+@import "sass/pages/menu";
+@import "sass/utils/extensions";
+@import "sass/utils/functions";
+@import "sass/utils/mixins";
+
+// code css
+
+// mise en page principale
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $police-titre;
+}
+body {
+    font-family: $police-texte;
+}
+// section info
+#info {
+    background-color: $fond-clair;
+    margin: 0px;
+    padding-bottom: 10%;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $fond-foncé;
+    padding: $padding-head;
+    font-size: 20px;
+    input {
+        text-decoration: none;
+        border: none;
+        background-color: $fond-foncé;
+        text-indent: 10px;
+    }
+}
+#texte {
+    .titre{
+        text-align: center;
+        width: 50%;
+        margin: 5% auto;
+    }
+    p {
+        text-align: center;
+        width: 70%;
+        margin: 5% auto;
+    }
+}
+// section fonctionnement
+nav {
+    text-indent: 25px;
+    text-align: left;
+    z-index: 0;
+    margin-bottom: 10%;
+    ol {
+        list-style-type: circle;
+        z-index: 2;
+    }
+        i{
+            color: grey;
+        }
+}
+
+// section restaurants
+#restaurant {
+    background-color: $fond-clair;
+  
+}
