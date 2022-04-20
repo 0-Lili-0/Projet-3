@@ -30,9 +30,9 @@
         }
 }
 .carteRestaurant {
-    width: 95%;
+    width: 83%;
     margin: auto;
-    padding: 0;
+    margin-bottom: 5%;
     background-color: white;
     border-radius: 20px;
     box-shadow: $shadow;
@@ -40,9 +40,13 @@
             font-size: 14px;
             padding: 2% 4%;
             text-align: start;
-            line-height: 10%;
+            line-height: 0%;
         }
         a {
             text-decoration: none;
+            color: black;
+        }
+        .coeurplein {
+            display: none;
         }
 }
