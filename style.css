@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.titre {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  text-align: left;
+  font-size: 18px;
+}
+
+.photo {
+  object-fit: cover;
+  object-position: center;
+  height: 165px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: 45%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 4px 10px grey;
+  font-weight: bold;
+}
+.btn--dégradé {
+  background: linear-gradient(0deg, #9356DC, #ff79da);
+  color: white;
+}
+.btn--clair {
+  width: 90%;
+  padding: 8%;
+  border-radius: 15px;
+  background-color: #f0f2f3;
+  border: none;
+  color: black;
+  margin-bottom: 4%;
+}
+
+.carteRestaurant {
+  width: 95%;
+  margin: auto;
+  padding: 0;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px grey;
+}
+.carteRestaurant .infoPhoto {
+  font-size: 14px;
+  padding: 2% 4%;
+  text-align: start;
+  line-height: 10%;
+}
+.carteRestaurant a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 0px grey;
+  margin: auto;
+  padding: 5% 1%;
+}
+header #logo {
+  width: 300px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Shrikhand", cursive;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#info {
+  background-color: #f0f2f3;
+  margin: 0px;
+  padding-bottom: 10%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #e3e6ea;
+  padding: 5% 1%;
+  font-size: 20px;
+}
+form input {
+  text-decoration: none;
+  border: none;
+  background-color: #e3e6ea;
+  text-indent: 10px;
+}
+
+#texte .titre {
+  text-align: center;
+  width: 50%;
+  margin: 5% auto;
+}
+#texte p {
+  text-align: center;
+  width: 70%;
+  margin: 5% auto;
+}
+
+nav {
+  text-indent: 25px;
+  text-align: left;
+  z-index: 0;
+  margin-bottom: 10%;
+}
+nav ol {
+  list-style-type: circle;
+  z-index: 2;
+}
+nav i {
+  color: grey;
+}
+
+#restaurant {
+  background-color: #f0f2f3;
+}
+
+/*# sourceMappingURL=style.css.map */

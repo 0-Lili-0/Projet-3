@@ -1,0 +1,48 @@
+
+// boutons
+.btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    width: 45%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: none;
+    box-shadow: $shadow;
+    font-weight: bold;
+    
+        &--dégradé {
+            background: linear-gradient(0deg, $couleur-primaire, $couleur-secondaire);
+            color: white;
+        }
+        &--clair {
+        width: 90%;
+        padding: 8%;
+        border-radius: 15px;
+        background-color: $fond-clair;
+        border: none;
+        color: black; 
+        margin-bottom: 4%;      
+        }
+}
+.carteRestaurant {
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: $shadow;
+        .infoPhoto {
+            font-size: 14px;
+            padding: 2% 4%;
+            text-align: start;
+            line-height: 10%;
+        }
+        a {
+            text-decoration: none;
+        }
+}
