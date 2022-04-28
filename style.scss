@@ -59,10 +59,8 @@ form {
 nav {
     text-indent: 25px;
     text-align: left;
-    z-index: 0;
     margin-bottom: 10%;
-    ol {
-        list-style-type: circle;
+    ol {   
         z-index: 2;
     }
         i{
@@ -73,5 +71,6 @@ nav {
 // section restaurants
 #restaurant {
     background-color: $fond-clair;
-  
+    padding-top: 5%;
+    padding-bottom: 10%;
 }

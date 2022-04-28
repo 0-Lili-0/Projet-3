@@ -34,6 +34,7 @@ p {
   border: none;
   box-shadow: 0px 4px 10px grey;
   font-weight: bold;
+  z-index: 1;
 }
 .btn--dégradé {
   background: linear-gradient(0deg, #9356DC, #ff79da);
@@ -41,12 +42,13 @@ p {
 }
 .btn--clair {
   width: 90%;
-  padding: 8%;
+  padding: 8% 2%;
   border-radius: 15px;
   background-color: #f0f2f3;
   border: none;
   color: black;
   margin-bottom: 4%;
+  z-index: 1;
 }
 
 .carteRestaurant {
@@ -131,11 +133,9 @@ form input {
 nav {
   text-indent: 25px;
   text-align: left;
-  z-index: 0;
   margin-bottom: 10%;
 }
 nav ol {
-  list-style-type: circle;
   z-index: 2;
 }
 nav i {
@@ -144,4 +144,6 @@ nav i {
 
 #restaurant {
   background-color: #f0f2f3;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }/*# sourceMappingURL=style.css.map */
