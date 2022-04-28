@@ -1,0 +1,8 @@
+// gestion background et couleur texte
+@mixin backgroundFonce($fond-fonce) {
+    @if(background-color == $fond-fonce){
+        color: white;
+    }@else{
+        color: black;
+    }
+}
