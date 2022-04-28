@@ -1,8 +1,6 @@
-// gestion background et couleur texte
-@mixin backgroundFonce($fond-fonce) {
-    @if(background-color == $fond-fonce){
-        color: white;
-    }@else{
-        color: black;
-    }
+// mise en forme titre des sections
+@mixin titres-sections {
+    text-align: center;
+    width: 50%;
+    margin: 5% auto;
 }
