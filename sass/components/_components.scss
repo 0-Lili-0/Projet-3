@@ -5,16 +5,16 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding: 3%;
-    width: 50%;
+    padding: 5%;
+    width: 62%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
     border: none;
     box-shadow: $shadow;
-    font-weight: bold;
-    z-index: 1;
+    font-weight: 300;
+    font-size: 16px;
         &--dégradé {
             background: linear-gradient(0deg, $couleur-primaire, $couleur-secondaire);
             color: white;
@@ -27,7 +27,8 @@
             background-color: $fond-clair;
             border: none;
             color: black; 
-            margin-bottom: 4%;      
+            margin-bottom: 4%;   
+            font-weight: bold;   
         }
 }
 // compteur auto
