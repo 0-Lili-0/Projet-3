@@ -3,10 +3,13 @@ header {
     display: flex; 
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 5px 0px grey;
     margin : auto;
     padding: 5% 1%;
+    width: 100%;
     #logo{
         width: 190px;
+    }
+    .btnRetour {
+        justify-content: flex-start;
     }
 }
