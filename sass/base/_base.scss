@@ -5,12 +5,23 @@
     font-weight: bold;
       
 }
-
 p {
     text-align: left;
     font-size: 18px;
-    
 }
+h1 {
+    font-size: 30px;
+        i{
+            padding-left: 20%;
+        }
+}
+.titreMenu {
+    font-size: 18px;
+    border-bottom: 4px solid $couleur-tertiaire;
+    width: 13%;
+    padding-bottom: 2%;
+}    
+// photos
 .photo {
     object-fit: cover;
     object-position: center;
@@ -19,4 +30,10 @@ p {
     border-radius: 20px 20px 0px 0px;
     position: relative;
 }
-
+.photoResto {
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+}
