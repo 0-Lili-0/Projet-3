@@ -1,6 +1,14 @@
 // mise en forme titre des sections
 @mixin titres-sections {
+    margin: 5% auto 5% 5%;
+    font-weight: bolder;
+    font-size: 28px;
+}
+// mise en forme titre section info
+@mixin titre-Menu {
     text-align: center;
-    width: 50%;
-    margin: 5% auto;
+    width: 70%;
+    margin: 10% auto 4% auto;
+    font-size: 27px;
+    font-weight: bolder;
 }

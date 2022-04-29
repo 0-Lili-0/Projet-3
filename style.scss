@@ -53,10 +53,14 @@ form {
     .titreSection {
         @include titres-sections;
     }
-    p {
+    .titreMenu {
+        @include titre-Menu;
+    }
+    p{
         text-align: center;
-        width: 70%;
-        margin: 5% auto;
+        width: 90%;
+        margin: 0 auto 10% auto;
+        
     }
 }
 // section fonctionnement
@@ -72,6 +76,7 @@ nav {
             color: grey;
             margin-right: 24px;
             font-size: 20px;
+            margin-left: 10%;
         }
 }
 
