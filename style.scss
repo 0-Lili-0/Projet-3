@@ -56,11 +56,13 @@ form {
     .titreMenu {
         @include titre-Menu;
     }
+    .titreInfo{
+        @include titre-Info
+    }
     p{
         text-align: center;
         width: 90%;
-        margin: 0 auto 10% auto;
-        
+        margin: 0 auto 5% auto;
     }
 }
 // section fonctionnement
@@ -93,3 +95,4 @@ nav {
     font-size: 16px;
     font-weight: bolder;
 }
+// pages des menus

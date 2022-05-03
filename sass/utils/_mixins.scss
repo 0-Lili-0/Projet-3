@@ -12,3 +12,10 @@
     font-size: 27px;
     font-weight: bolder;
 }
+@mixin titre-Info {
+    font-size: 26px;
+    padding-top: 6%;
+    font-weight: bolder;
+    width: 70%;
+    margin-bottom: 10%
+}

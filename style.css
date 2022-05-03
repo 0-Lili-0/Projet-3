@@ -32,7 +32,6 @@ h1 i {
   height: 165px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
-  position: relative;
 }
 
 .photoResto {
@@ -50,12 +49,11 @@ h1 i {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 4%;
   width: 62%;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 25px;
+  margin: 5% auto 10% auto;
+  border-radius: 30px;
   border: none;
   box-shadow: 0px 4px 10px grey;
   font-weight: 300;
@@ -64,6 +62,7 @@ h1 i {
 .btn--dégradé {
   background: linear-gradient(0deg, #9356DC, #ff79da);
   color: white;
+  margin-top: 15%;
 }
 .btn--clair {
   justify-content: flex-start;
@@ -120,17 +119,24 @@ h1 i {
   border-radius: 20px;
   box-shadow: 0px 4px 10px grey;
 }
-.carteRestaurant span {
+.carteRestaurant .contenant {
+  position: relative;
+}
+.carteRestaurant .contenant .photo {
+  position: relative;
+  z-index: 1;
+}
+.carteRestaurant .contenant .legende {
   background-color: #99e2d0;
   color: #00693E;
   width: 20%;
   font-size: 14px;
   padding: 5px 2px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 4px;
   position: relative;
-  top: 5%;
-  right: -67%;
+  top: 7%;
+  right: -74%;
   z-index: 2;
 }
 .carteRestaurant .infoPhoto {
@@ -166,12 +172,35 @@ h1 i {
 .carteMenu {
   background-color: #F2F5F3;
   margin-top: 0;
-  padding: 5% 5%;
-  border-radius: 40px;
+  padding: 2% 5% 10% 5%;
+  border-radius: 40px 40px 0px 0px;
   width: 100%;
   position: relative;
   top: -54px;
   z-index: 1;
+}
+.carteMenu h1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plat {
+  background-color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 2% 3%;
+  margin-bottom: 15px;
+  line-height: 25%;
+}
+.plat .nomPlat {
+  font-size: 16px;
+  font-weight: bold;
+}
+.plat .infoPlat {
+  font-size: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 footer {
@@ -210,7 +239,8 @@ header {
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 5% 1%;
+  padding: 5% 5%;
+  gap: 15%;
   width: 100%;
 }
 header #logo {
@@ -274,10 +304,17 @@ form input {
   font-size: 27px;
   font-weight: bolder;
 }
+#texte .titreInfo {
+  font-size: 26px;
+  padding-top: 6%;
+  font-weight: bolder;
+  width: 70%;
+  margin-bottom: 10%;
+}
 #texte p {
   text-align: center;
   width: 90%;
-  margin: 0 auto 10% auto;
+  margin: 0 auto 5% auto;
 }
 
 #fonctionnement .titreSection {
