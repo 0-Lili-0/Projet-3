@@ -32,7 +32,8 @@ h1 {
 .photoResto {
     object-fit: cover;
     object-position: center;
-    height: 250px;
+    position: absolute;
+    height: 300px;
     width: 100%;
     z-index: -1;
 }

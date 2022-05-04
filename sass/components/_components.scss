@@ -75,9 +75,11 @@
     box-shadow: $shadow;
         .contenant{
             position: relative;
+            display: inline-block;
+            width: 100%;
+            z-index: 1;
             .photo{
-                position: relative;
-                z-index: 1;
+                z-index: 2;
             }
             .legende {
                 background-color: $couleur-tertiaire;
@@ -87,17 +89,18 @@
                 padding: 5px 2px;
                 text-align: center;
                 border-radius: 4px;
-                position: relative;
-                top: 7%;
-                right: -74%;
-                z-index: 2;
+                position: absolute;
+                top: 6%;
+                right: 4%;
+                z-index: 3;
             }
         }    
         .infoPhoto {
             display: flex;
             flex-flow: row  wrap;
-            justify-content: flex-start; 
-            align-items: center;  
+            justify-content: space-between; 
+            align-items: center; 
+            gap: 22%; 
             font-size: 14px;
             padding: 2% 4%;
             line-height: 0%;
@@ -126,12 +129,11 @@
 // carte menu
 .carteMenu {
     background-color: $fond-clair;
-    margin-top: 0;
+    margin-top: 50%;
     padding: 2% 5% 10% 5%;
     border-radius: 40px 40px 0px 0px;
     width: 100%;
     position: relative;
-    top: -54px;
     z-index: 1;
     h1 {
         display: flex;
