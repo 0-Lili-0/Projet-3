@@ -157,5 +157,8 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        span {
+            font-weight: bolder;
+        }
     }
 }
