@@ -29,6 +29,10 @@
             color: black; 
             margin-bottom: 4%;   
             font-weight: bold;
+                &:hover {
+                    transition: 0.7s;
+                    
+                }   
         }
 }
 .btnRetour {
