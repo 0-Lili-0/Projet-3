@@ -77,7 +77,14 @@ h1 i {
   font-weight: bold;
 }
 .btn--clair:hover {
-  transition: 0.7s;
+  background-color: #9356DC;
+  filter: brightness(2.75);
+}
+.btn--clair:hover .compteur {
+  color: #9356DC;
+}
+.btn--clair:hover i {
+  color: #9356DC;
 }
 
 .btnRetour {
@@ -165,6 +172,7 @@ h1 i {
 }
 .carteRestaurant .coeurplein {
   display: none;
+  opacity: 0;
   margin-top: 3%;
   font-size: 25px;
 }
@@ -420,5 +428,81 @@ nav i {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
     opacity: 0;
+  }
+}
+.sectionMenuEntrees {
+  -webkit-animation: entrees 3s linear 1s forward;
+          animation: entrees 3s linear 1s forward;
+}
+
+.sectionMenuPlats {
+  -webkit-animation: plats 3s linear 2s forward;
+          animation: plats 3s linear 2s forward;
+}
+
+.sectionMenuDesserts {
+  -webkit-animation: desserts 3s linear 3s forward;
+          animation: desserts 3s linear 3s forward;
+}
+
+@-webkit-keyframes entrees {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes entrees {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes plats {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes plats {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes desserts {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes desserts {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

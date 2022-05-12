@@ -30,8 +30,14 @@
             margin-bottom: 4%;   
             font-weight: bold;
                 &:hover {
-                    transition: 0.7s;
-                    
+                    background-color: $couleur-primaire;
+                    filter: brightness(2.75);
+                    .compteur {
+                        color: $couleur-primaire;
+                    }
+                    i {
+                        color: $couleur-primaire;
+                    }
                 }   
         }
 }
@@ -119,8 +125,10 @@
         }
         .coeurplein {
                 display: none;
+                opacity: 0;
                 margin-top: 3%;
                 font-size: 25px;
+
         }
         .coeurvide {
                 margin-top: 3%;

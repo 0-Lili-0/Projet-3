@@ -132,3 +132,45 @@ nav {
     opacity: 0;
   }
 }
+// anim coeur
+
+// anim menu
+.sectionMenuEntrees {
+    animation: entrees 3s linear 1s forward;
+  }
+.sectionMenuPlats {
+    animation: plats 3s linear 2s forward;
+  }
+.sectionMenuDesserts {
+    animation: desserts 3s linear 3s forward;
+  }
+@keyframes entrees {
+    from{
+      transform: scaleX(0);
+      opacity:0;
+    }
+    to{
+      transform: scaleX(1);
+      opacity:1;
+    }
+  }
+@keyframes plats {
+    from{
+      transform: scaleX(0);
+      opacity:0;
+    }
+    to{
+      transform: scaleX(1);
+      opacity:1;
+    }
+  }
+@keyframes desserts {
+    from{
+      transform: scaleX(0);
+      opacity:0;
+    }
+    to{
+      transform: scaleX(1);
+      opacity:1;
+    }
+  }
