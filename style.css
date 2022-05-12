@@ -379,11 +379,12 @@ nav i {
 }
 
 .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
   background-color: #EBEBEB;
   opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
 }
 
 .rond {
@@ -403,6 +404,7 @@ nav i {
   transform: translate(-50%, -50%);
   -webkit-animation: spinner 3s linear;
           animation: spinner 3s linear;
+  animation-direction: reverse;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -412,22 +414,24 @@ nav i {
 @-webkit-keyframes spinner {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 1;
+    opacity: 0;
+    z-index: -1;
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    opacity: 0;
+    opacity: 1;
   }
 }
 
 @keyframes spinner {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 1;
+    opacity: 0;
+    z-index: -1;
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    opacity: 0;
+    opacity: 1;
   }
 }
 .sectionMenuEntrees {
