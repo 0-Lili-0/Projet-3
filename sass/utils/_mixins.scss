@@ -21,12 +21,12 @@
 }
 // media queries
 @mixin tablette {
-    @media #{$medium-up} {
+    @media only screen and (min-width: #{$tablette-min}) and (max-width: #{$tablette-max}) {
         @content; 
     }
 }
 @mixin desktop {
-    @media #{$large-up} {
+    @media only screen and (max-width:#{$desktop}) {
         @content;
     }
 }

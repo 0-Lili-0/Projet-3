@@ -96,4 +96,39 @@ nav {
     font-weight: bolder;
 }
 // animation
-
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $fond-fonce;
+    opacity: 0.7;
+}
+.rond {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+    border: 10px solid #9356dc;
+    border-radius: 50%;
+    border-bottom-color: #ff79da;
+    border-right-color: #99e2d0;
+    border-top-color: rgb(63, 63, 63);
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinner 3s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}    
+@keyframes spinner {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 0;
+  }
+}
