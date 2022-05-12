@@ -10,6 +10,12 @@ header {
     #logo{
         width: 190px;
         position: relative;
+        @include tablette {
+            width: 350px;
+        }
+        @include desktop {
+            width: 425px;
+        }
     }
     .btnRetour {
         justify-content: center;

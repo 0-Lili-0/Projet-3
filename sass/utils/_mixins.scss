@@ -19,3 +19,14 @@
     width: 60%;
     margin-bottom: 10%
 }
+// media queries
+@mixin tablette {
+    @media #{$medium-up} {
+        @content; 
+    }
+}
+@mixin desktop {
+    @media #{$large-up} {
+        @content;
+    }
+}
