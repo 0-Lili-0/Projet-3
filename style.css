@@ -153,36 +153,56 @@ h1 i {
   z-index: 3;
 }
 .carteRestaurant .infoPhoto {
+  position: relative;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25%;
+  flex-flow: column nowrap;
+  line-height: 36px;
+  width: 100%;
+  height: 81px;
   font-size: 14px;
-  padding: 2% 4%;
-  line-height: 0%;
+  padding: 1% 4%;
 }
 .carteRestaurant .titre {
   font-size: 18px;
+  width: 100%;
+}
+.carteRestaurant p {
+  margin-top: 0%;
   width: 100%;
 }
 .carteRestaurant a {
   text-decoration: none;
   color: black;
 }
-.carteRestaurant .coeurplein {
-  display: none;
-  opacity: 0;
-  margin-top: 3%;
+.carteRestaurant .coeur {
+  position: relative;
+  margin-top: -14%;
   font-size: 25px;
 }
-.carteRestaurant .coeurvide {
-  margin-top: 3%;
-  font-size: 25px;
+.carteRestaurant .coeur .far {
+  position: absolute;
+  margin-right: 51%;
+  right: -45%;
+  margin-top: 4%;
+  font-size: 27px;
+}
+.carteRestaurant .coeur .fas {
+  position: absolute;
+  margin-right: 51%;
+  right: -45%;
+  font-size: 27px;
+  background: linear-gradient(120deg, #9356DC, #ff79da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  margin-top: 4%;
+}
+.carteRestaurant .coeur .fas:hover {
+  opacity: 1;
 }
 .carteRestaurant p {
-  margin-top: 3%;
-  width: 100%;
+  margin-top: 1%;
 }
 
 .carteMenu {
@@ -194,9 +214,34 @@ h1 i {
   position: relative;
   z-index: 1;
 }
-.carteMenu h1 {
+.carteMenu .nomRestoMenu {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.carteMenu .nomRestoMenu .coeur {
+  position: absolute;
+}
+.carteMenu .nomRestoMenu .coeur .far {
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  top: 11px;
+  right: -404px;
+}
+.carteMenu .nomRestoMenu .coeur .fas {
+  position: absolute;
+  font-size: 30px;
+  top: 11px;
+  right: -404px;
+  background: linear-gradient(120deg, #9356DC, #ff79da);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.carteMenu .nomRestoMenu .coeur .fas:hover {
+  opacity: 1;
 }
 
 .plat {
@@ -267,6 +312,12 @@ header {
 header #logo {
   width: 190px;
   position: relative;
+}
+@media screen and (min-width: desktop) {
+  header #logo {
+    width: 380px;
+    background-color: aqua;
+  }
 }
 header .btnRetour {
   justify-content: center;
@@ -350,6 +401,11 @@ form input {
   font-weight: bolder;
   font-size: 28px;
 }
+@media screen and (min-width: desktop) {
+  #fonctionnement .titreSection {
+    font-size: 35px;
+  }
+}
 
 nav {
   text-align: left;
@@ -379,19 +435,19 @@ nav i {
 }
 
 .loader {
+  display: block;
   position: fixed;
   background-color: #EBEBEB;
-  opacity: 0.7;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: -1;
 }
 
 .rond {
   width: 100px;
   height: 100px;
   margin: 0 auto 20px auto;
-  border: 10px solid #9356dc;
+  border: 10px solid #9356DC;
   border-radius: 50%;
   border-bottom-color: #ff79da;
   border-right-color: #99e2d0;
@@ -414,24 +470,26 @@ nav i {
 @-webkit-keyframes spinner {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 0;
-    z-index: -1;
+    opacity: 1;
+    z-index: 999;
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    opacity: 1;
+    opacity: 0;
+    z-index: -1;
   }
 }
 
 @keyframes spinner {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 0;
-    z-index: -1;
+    opacity: 1;
+    z-index: 999;
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    opacity: 1;
+    opacity: 0;
+    z-index: -1;
   }
 }
 .sectionMenuEntrees {

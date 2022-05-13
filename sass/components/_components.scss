@@ -106,37 +106,56 @@
             }
         }    
         .infoPhoto {
+            position: relative;
             display: flex;
-            flex-flow: row  wrap;
-            justify-content: space-between; 
-            align-items: center; 
-            gap: 25%; 
+            flex-flow: column nowrap;
+            line-height: 36px;
+            width: 100%;
+            height: 81px;
             font-size: 14px;
-            padding: 2% 4%;
-            line-height: 0%;
+            padding: 1% 4%;
         }
         .titre {
                 font-size: 18px;
                 width: 100%;
         }
+        p {
+            margin-top: 0%;
+            width: 100%;
+        }
         a {
                 text-decoration: none;
                 color: black;
         }
-        .coeurplein {
-                display: none;
-                opacity: 0;
-                margin-top: 3%;
+        .coeur {
+                position: relative;
+                margin-top: -14%;
                 font-size: 25px;
-
-        }
-        .coeurvide {
-                margin-top: 3%;
-                font-size: 25px;
+                .far {
+                    position: absolute;
+                    margin-right: 51%;
+                    right: -45%;
+                    margin-top: 4%;
+                    font-size: 27px;
+                }
+                .fas {
+                    position: absolute;
+                    margin-right: 51%;
+                    right: -45%;
+                    font-size: 27px;
+                    background: linear-gradient(120deg,$couleur-primaire,$couleur-secondaire);
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity:0;
+                    margin-top: 4%;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
         }
         p {
-                margin-top: 3%;
-                width: 100%;
+                margin-top: 1%;
         }
 }
 // carte menu
@@ -148,9 +167,34 @@
     width: 100%;
     position: relative;
     z-index: 1;
-    h1 {
+    .nomRestoMenu {
         display: flex;
-        justify-content: space-between;
+        flex-flow: row nowrap;
+        position: relative;
+        .coeur{
+            position: absolute;
+            .far {
+                position: absolute;
+                color: black;
+                font-size: 30px;
+                top: 11px;
+                right: -404px;
+            }
+            .fas {
+                position: absolute;
+                font-size: 30px;
+                top: 11px;
+                right: -404px;
+                background: linear-gradient(120deg,$couleur-primaire,$couleur-secondaire);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity:0;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 .plat {

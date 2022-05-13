@@ -68,6 +68,9 @@ form {
 // section fonctionnement
 #fonctionnement {
     .titreSection {
+        @include desktop{
+            font-size: 35px;
+        }
         @include titres-sections;
     }
 }
@@ -97,22 +100,22 @@ nav {
 }
 // animation
 .loader {
+    display: block;
     position: fixed;
     background-color: $fond-fonce;
-    opacity: 0.7;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: -1;
 }
 .rond {
     width: 100px;
     height: 100px;
     margin: 0 auto 20px auto;
-    border: 10px solid #9356dc;
+    border: 10px solid $couleur-primaire;
     border-radius: 50%;
-    border-bottom-color: #ff79da;
-    border-right-color: #99e2d0;
-    border-top-color: rgb(63, 63, 63);
+    border-bottom-color: $couleur-secondaire;
+    border-right-color: $couleur-tertiaire;
+    border-top-color: $footer;
     box-sizing: border-box;
     background-color: white;
     position: absolute;
@@ -127,12 +130,13 @@ nav {
 @keyframes spinner {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 0;
-    z-index: -1;
+    opacity: 1;
+    z-index: 999;
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    opacity: 1;
+    opacity: 0;
+    z-index: -1;
   }
 }
 // anim coeur
