@@ -77,14 +77,12 @@ h1 i {
   font-weight: bold;
 }
 .btn--clair:hover {
-  background-color: #9356DC;
-  filter: brightness(2.75);
-}
-.btn--clair:hover .compteur {
-  color: #9356DC;
+  background-color: #fbeeff;
+  box-shadow: 6px 9px 12px 0px rgb(179, 179, 179);
 }
 .btn--clair:hover i {
   color: #9356DC;
+  z-index: 3;
 }
 
 .btnRetour {
@@ -98,28 +96,27 @@ h1 i {
   color: black;
 }
 
-.compteur {
-  list-style-type: none;
-  margin: 0 auto;
-  padding-left: 0;
+body {
+  counter-reset: objet-compteur;
 }
-.compteur li {
-  counter-increment: compteur;
+
+.compteur {
   text-align: center;
   position: relative;
 }
-.compteur li::before {
-  content: counter(compteur);
+.compteur .objet::before {
+  counter-increment: objet-compteur;
+  content: counter(objet-compteur);
   margin-right: 5px;
-  font-size: 80%;
+  font-size: 14px;
   background-color: #9356DC;
   color: white;
-  font-weight: bolder;
   padding: 6px 10px;
   border-radius: 50%;
-  margin-left: -34%;
+  margin-top: 5%;
   position: absolute;
-  left: 30%;
+  left: 5%;
+  z-index: 2;
 }
 
 .carteRestaurant {
@@ -407,15 +404,9 @@ form input {
   }
 }
 
-nav {
-  text-align: left;
-  margin-bottom: 10%;
-}
-nav i {
-  color: grey;
-  margin-right: 24px;
-  font-size: 20px;
-  margin-left: 10%;
+.objet i {
+  color: gray;
+  margin: auto 7%;
 }
 
 #restaurant {

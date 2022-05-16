@@ -74,16 +74,12 @@ form {
         @include titres-sections;
     }
 }
-nav {
-    text-align: left;
-    margin-bottom: 10%;
-        i{
-            color: grey;
-            margin-right: 24px;
-            font-size: 20px;
-            margin-left: 10%;
-        }
-}
+.objet {
+    i {
+      color: gray;
+      margin: auto 7%;
+    }
+  }
 
 // section restaurants
 #restaurant {

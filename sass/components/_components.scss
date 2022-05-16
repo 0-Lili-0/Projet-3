@@ -30,15 +30,13 @@
             margin-bottom: 4%;   
             font-weight: bold;
                 &:hover {
-                    background-color: $couleur-primaire;
-                    filter: brightness(2.75);
-                    .compteur {
+                    background-color: $couleur-primaire-hover;
+                    box-shadow: $shadow-hover;
+                        i {
                         color: $couleur-primaire;
-                    }
-                    i {
-                        color: $couleur-primaire;
-                    }
-                }   
+                        z-index: 3;
+                        }
+                    }  
         }
 }
 .btnRetour {
@@ -52,28 +50,26 @@
     }
 }
 // compteur auto
+body {
+    counter-reset: objet-compteur;
+}
 .compteur {
-    list-style-type: none;
-    margin: 0 auto;
-    padding-left: 0;
-        li {
-            counter-increment: compteur;
-            text-align: center;
-            position: relative;
-        }
-            li::before {
-                content: counter(compteur);
-                margin-right: 5px;
-                font-size: 80%;
-                background-color: $couleur-primaire;
-                color: white;
-                font-weight: bolder;
-                padding: 6px 10px;
-                border-radius: 50%;
-                margin-left: -34%;
-                position: absolute;
-                left: 30%
-            }
+    text-align: center;
+    position: relative;
+    .objet::before{
+        counter-increment: objet-compteur;
+        content: counter(objet-compteur);
+        margin-right: 5px;
+        font-size: 14px;
+        background-color: #9356DC;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 50%;
+        margin-top: 5%;
+        position: absolute;
+        left: 5%;
+        z-index: 2;
+  }
 }
 // carte restaurant
 .carteRestaurant {
@@ -137,6 +133,7 @@
                     right: -45%;
                     margin-top: 4%;
                     font-size: 27px;
+
                 }
                 .fas {
                     position: absolute;
