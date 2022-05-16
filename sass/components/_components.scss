@@ -146,8 +146,12 @@ body {
                     -webkit-text-fill-color: transparent;
                     opacity:0;
                     margin-top: 4%;
+                    height: 0px;
                     &:hover {
                         opacity: 1;
+                        transition: 2s ease-in-out;
+                        height: 27px;
+                        transform-origin: bottom left;
                     }
                 }
         }
@@ -187,8 +191,12 @@ body {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 opacity:0;
+                height: 0px;
                 &:hover {
                     opacity: 1;
+                    transition: 2s ease-in-out;
+                    height: 30px;
+                    transform-origin: bottom left;
                 }
             }
         }

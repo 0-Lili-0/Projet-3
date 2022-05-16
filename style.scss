@@ -101,7 +101,8 @@ form {
     background-color: $fond-fonce;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -15;
+    
 }
 .rond {
     width: 100px;
@@ -126,54 +127,54 @@ form {
 @keyframes spinner {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 1;
+    opacity: 0;
     z-index: 999;
+    visibility: hidden;
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    opacity: 0;
-    z-index: -1;
+    opacity: 1;
+    z-index: -999;
+    visibility: hidden;
+    
   }
 }
-// anim coeur
-
 // anim menu
 .sectionMenuEntrees {
-    animation: entrees 3s linear 1s forward;
+    animation: entrees 1s linear forward 1s;
   }
 .sectionMenuPlats {
-    animation: plats 3s linear 2s forward;
+    animation: plats 2s linear forward 2.5s;
   }
 .sectionMenuDesserts {
-    animation: desserts 3s linear 3s forward;
+    animation: desserts 3s linear forward 3.5s;
   }
 @keyframes entrees {
     from{
-      transform: scaleX(0);
       opacity:0;
     }
     to{
-      transform: scaleX(1);
+      
       opacity:1;
     }
   }
 @keyframes plats {
     from{
-      transform: scaleX(0);
+      
       opacity:0;
     }
     to{
-      transform: scaleX(1);
+      
       opacity:1;
     }
   }
 @keyframes desserts {
     from{
-      transform: scaleX(0);
+      
       opacity:0;
     }
     to{
-      transform: scaleX(1);
+      
       opacity:1;
     }
   }
