@@ -436,11 +436,11 @@ form input {
 .loader {
   display: block;
   position: fixed;
-  background-color: #EBEBEB;
+  background-color: #fbeeff;
   width: 100%;
   height: 100%;
-  -webkit-animation: loader 3s linear;
-          animation: loader 3s linear;
+  -webkit-animation: loader 4s linear;
+          animation: loader 4s linear;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -462,12 +462,19 @@ form input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-animation: spinner 4s linear;
-          animation: spinner 4s linear;
+  -webkit-animation: spinner 3.5s linear;
+          animation: spinner 3.5s linear;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+.rond i {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  margin: auto;
+  font-size: 25px;
 }
 
 @-webkit-keyframes spinner {
@@ -477,7 +484,7 @@ form input {
     z-index: 999;
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
     opacity: 0;
     z-index: -999;
     visibility: hidden;
@@ -491,7 +498,7 @@ form input {
     z-index: 999;
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
     opacity: 0;
     z-index: -999;
     visibility: hidden;
@@ -520,66 +527,96 @@ form input {
   }
 }
 .sectionMenuEntrees {
-  -webkit-animation: entrees 1s linear forward 1s;
-          animation: entrees 1s linear forward 1s;
+  width: 100%;
+  visibility: hidden;
+  -webkit-animation: entrees 4s ease-in-out forwards;
+          animation: entrees 4s ease-in-out forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .sectionMenuPlats {
-  -webkit-animation: plats 2s linear forward 2.5s;
-          animation: plats 2s linear forward 2.5s;
+  width: 100%;
+  visibility: hidden;
+  -webkit-animation: plats 4s ease-in-out forwards;
+          animation: plats 4s ease-in-out forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .sectionMenuDesserts {
-  -webkit-animation: desserts 3s linear forward 3.5s;
-          animation: desserts 3s linear forward 3.5s;
+  width: 100%;
+  visibility: hidden;
+  -webkit-animation: desserts 4s ease-in-out forwards;
+          animation: desserts 4s ease-in-out forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 @-webkit-keyframes entrees {
   from {
     opacity: 0;
+    width: 0%;
   }
   to {
     opacity: 1;
+    width: 100%;
+    visibility: visible;
   }
 }
 
 @keyframes entrees {
   from {
     opacity: 0;
+    width: 0%;
   }
   to {
     opacity: 1;
+    width: 100%;
+    visibility: visible;
   }
 }
 @-webkit-keyframes plats {
   from {
     opacity: 0;
+    width: 0%;
   }
   to {
     opacity: 1;
+    width: 100%;
+    visibility: visible;
   }
 }
 @keyframes plats {
   from {
     opacity: 0;
+    width: 0%;
   }
   to {
     opacity: 1;
+    width: 100%;
+    visibility: visible;
   }
 }
 @-webkit-keyframes desserts {
   from {
     opacity: 0;
+    width: 0%;
   }
   to {
     opacity: 1;
+    width: 100%;
+    visibility: visible;
   }
 }
 @keyframes desserts {
   from {
     opacity: 0;
+    width: 0%;
   }
   to {
     opacity: 1;
+    width: 100%;
+    visibility: visible;
   }
 }/*# sourceMappingURL=style.css.map */
