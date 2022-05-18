@@ -28,9 +28,11 @@ body {
     background-color: $fond-clair;
     margin: 0px;
     padding-bottom: 10%;
+    
     .titreSection {
         @include titres-sections;
     }
+    
 }
 form {
     display: flex;
@@ -40,6 +42,18 @@ form {
     background-color: $fond-fonce;
     padding: $padding-head;
     font-size: 20px;
+    @include desktop {
+      left: 12%;
+    }
+    i {
+      @include tablette {
+        font-size: 30px;
+        margin-top: 4%;
+      }
+      @include desktop{
+        font-size: 40px;
+      }
+    }
     input {
         text-decoration: none;
         border: none;
@@ -47,29 +61,64 @@ form {
         text-indent: 10px;
         font-size: 17px;
         width: 42%;
+        @include tablette {
+          font-size: 30px;
+          width: 40%;
+          margin-top: 5%;
+        }
+        @include desktop {
+          font-size: 40px;
+          width: 53%;
+          margin-left: 1%;
+        }
     }
 }
 #texte {
     .titreSection {
         @include titres-sections;
+        
     }
     .titreMenu {
         @include titre-Menu;
+        @include tablette{
+          font-size: 21px;
+        }
+        @include desktop {
+          font-size: 30px;
+        }
     }
     .titreInfo{
-        @include titre-Info
+        @include titre-Info;
+        @include tablette {
+          font-size: 35px;
+        }
+        @include desktop {
+          font-size: 60px;
+          width: 59%;
+        }
     }
     p{
         text-align: center;
         width: 85%;
         margin: 0 auto 5% auto;
+        @include tablette {
+          font-size: 26px;
+        }
+        @include desktop {
+          width: 74%;
+          font-size: 42px;
+        }
     }
 }
 // section fonctionnement
 #fonctionnement {
     .titreSection {
-        @include desktop{
-            font-size: 35px;
+        @include tablette {
+            font-size: 38px;
+        }
+        @include desktop {
+          font-size: 40px;
+          width: 100%;
         }
         @include titres-sections;
     }
@@ -86,8 +135,27 @@ form {
     background-color: $fond-clair;
     padding-top: 5%;
     padding-bottom: 10%;
+    @include tablette {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: center;
+    }
+    @include desktop {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: center;
+    }
         .titreSection{
             @include titres-sections;
+            @include tablette {
+              width: 100%;
+            }
+            @include desktop {
+              font-size: 40px;
+              width: 100%;
+            }
         }
 }
 .titre {

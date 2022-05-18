@@ -11,10 +11,12 @@ header {
     #logo{
         width: 190px;
         position: relative;
-        @include desktop{
-            width: 380px;
-            background-color: aqua;
+        @include tablette {
+            width: 350px;
         }
+        @include desktop {
+            width: 450px;
+        }  
     }
     .btnRetour {
         justify-content: center;
@@ -24,5 +26,14 @@ header {
         left: 6%;
         width: 4%;
         font-size: 130%;
+        @include tablette {
+            font-size: 170%;
+            top: 7%;
+          }
+        @include desktop {
+            font-size: 210%;
+            top: 12%;
+            left: 10%;
+        }
     }
 }

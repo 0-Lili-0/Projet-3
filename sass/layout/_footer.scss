@@ -5,6 +5,9 @@ footer {
     background-color: $footer;
     margin: 0;
     padding-bottom: 5%;
+    @include tablette {
+        width: 100%;
+    }
         h1{
             margin-top: 0;
             font-size: 18px;
@@ -12,6 +15,12 @@ footer {
             color: white;
             font-weight: 100;
             margin-bottom: 0;
+            @include tablette {
+                font-size: 30px;
+            }
+            @include desktop {
+                font-size: 40px;
+            }
         }
         nav ul{
             list-style-type: none;
@@ -24,6 +33,15 @@ footer {
             li{
                 color: white;
                 line-height: 28px;
+                @include tablette {
+                    line-height: 40px;
+                    width: 60%;
+                    font-size: 25px;
+                }
+                @include desktop {
+                    font-size: 25px;
+                    line-height: 40px;
+                }
                 i{
                 color: white;
                 font-size: 80%;
@@ -31,6 +49,9 @@ footer {
                 margin-right: 3%;
                 margin-left: 0;
                 width: 4%;
+                @include desktop {
+                    margin-right: -1%;
+                }
                 }
             }
 }

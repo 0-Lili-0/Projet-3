@@ -15,6 +15,14 @@
     box-shadow: $shadow;
     font-weight: 300;
     font-size: 16px;
+    @include tablette {
+        width: 40%;
+        font-size: 20px;
+    }
+    @include desktop {
+        width: 40%;
+        font-size: 30px;
+    }
         &--dégradé {
             background: linear-gradient(0deg, $couleur-primaire, $couleur-secondaire);
             color: white;
@@ -30,6 +38,20 @@
             color: black; 
             margin-bottom: 4%;   
             font-weight: bold;
+            @include tablette {
+                width: 65%;
+            }
+            @include desktop {
+                width: 68%;
+            }
+            i {
+                @include tablette {
+                    font-size: 30px;
+                }
+                @include desktop {
+                    font-size: 40px;
+                }
+            }
                 &:hover {
                     background-color: $couleur-primaire-hover;
                     box-shadow: $shadow-hover;
@@ -70,6 +92,15 @@ body {
         position: absolute;
         left: 5%;
         z-index: 2;
+        @include tablette {
+            margin-top: 6%;
+            left: 16%;
+        }
+        @include desktop {
+            margin-top: 6%;
+            left: 15%;
+            font-size: 20px;
+        }
   }
 }
 // carte restaurant
@@ -80,11 +111,20 @@ body {
     background-color: white;
     border-radius: 20px;
     box-shadow: $shadow;
+    @include tablette {
+        width: 45%;
+    }
+    @include desktop {
+        width: 40%;
+        height: 200px;
+        margin: 5% 2%;
+    }
         .contenant{
             position: relative;
             display: inline-block;
             width: 100%;
             z-index: 1;
+            box-shadow: $shadow;
             .photo{
                 z-index: 2;
             }
@@ -100,6 +140,10 @@ body {
                 top: 6%;
                 right: 4%;
                 z-index: 3;
+                @include desktop {
+                    width: 23%;
+                    font-size: 19px;
+                }
             }
         }    
         .infoPhoto {
@@ -111,14 +155,27 @@ body {
             height: 81px;
             font-size: 14px;
             padding: 1% 4%;
+            box-shadow: $shadow;
+            border-radius: 0 0px 20px 20px;
+            @include desktop {
+                height: 105px;
         }
         .titre {
-                font-size: 18px;
-                width: 100%;
+            font-size: 18px;
+            width: 100%;
+            @include desktop {
+                font-size: 33px;
+                padding-bottom: 1%;
+            }
         }
+        
         p {
             margin-top: 0%;
             width: 100%;
+            @include desktop {
+                font-size: 26px;
+                line-height: 46px;
+            }
         }
         a {
                 text-decoration: none;
@@ -134,7 +191,10 @@ body {
                     right: -45%;
                     margin-top: 4%;
                     font-size: 27px;
-
+                    @include desktop {
+                        font-size: 40px;
+                        margin-top: 2%;
+                    }
                 }
                 .fas {
                     position: absolute;
@@ -148,17 +208,25 @@ body {
                     opacity:0;
                     margin-top: 4%;
                     height: 0px;
+                    @include desktop {
+                        font-size: 40px;
+                        margin-top: 2%;
+                    }
                     &:hover {
                         opacity: 1;
                         transition: 2s ease-in-out;
                         height: 27px;
-                        transform-origin: bottom left;
+                        transform-origin: bottom;
+                        @include desktop {
+                            height: 40px;
+                        }
                     }
                 }
         }
         p {
                 margin-top: 1%;
         }
+}
 }
 // carte menu
 .carteMenu {
@@ -169,10 +237,28 @@ body {
     width: 100%;
     position: relative;
     z-index: 1;
+    @include tablette {
+        margin-top: 45%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    @include desktop{
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 42%;
+        padding: 2% 5% 5% 5%;
+    }
     .nomRestoMenu {
         display: flex;
         flex-flow: row nowrap;
         position: relative;
+        @include tablette {
+            font-size: 35px;
+            width: 100%;
+        }
+        @include desktop {
+            font-size: 50px;
+        }
         .coeur{
             position: absolute;
             .far {
@@ -181,6 +267,14 @@ body {
                 font-size: 30px;
                 top: 11px;
                 right: -404px;
+                @include tablette {
+                    right: -730px;
+                }
+                @include desktop {
+                    font-size: 40px;
+                    top: 22px;
+                    right: -1400px;
+                }
             }
             .fas {
                 position: absolute;
@@ -193,11 +287,22 @@ body {
                 -webkit-text-fill-color: transparent;
                 opacity:0;
                 height: 0px;
+                @include tablette {
+                    right: -730px;
+                }
+                @include desktop {
+                    font-size: 40px;
+                    top: 22px;
+                    right: -1400px;
+                }
                 &:hover {
                     opacity: 1;
                     transition: 2s ease-in-out;
                     height: 30px;
-                    transform-origin: bottom left;
+                    transform-origin: bottom;
+                    @include desktop {
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -213,12 +318,24 @@ body {
     .nomPlat{
         font-size: 16px;
         font-weight: bold;
+        @include tablette {
+            font-size: 18px;
+        }
+        @include desktop {
+            font-size: 25px;
+        }
     }
     .infoPlat{
         font-size: 15px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        @include tablette {
+            font-size: 18px;
+        }
+        @include desktop {
+            font-size: 23px;
+        }
         span {
             font-weight: bolder;
         }

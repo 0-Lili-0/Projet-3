@@ -31,4 +31,4 @@ $tablette-min: 768px;
 $desktop: 992px;
 
 $medium-up: "only screen and (min-width: #{$tablette-min}) and (max-width: #{$tablette-max})";
-$large-up: "only screen and (max-width:#{$desktop})";
+$large-up: "only screen and (min-width:#{$desktop})";
