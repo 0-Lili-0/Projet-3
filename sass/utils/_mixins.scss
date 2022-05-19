@@ -22,8 +22,8 @@
 }
 // mixin gestion text
 @mixin ellipsis {
-    white-space: nowrap;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
 }
 // media queries

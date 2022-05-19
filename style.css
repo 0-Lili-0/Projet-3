@@ -561,12 +561,6 @@ header .btnRetour {
   border-radius: 20px;
   padding: 2% 3%;
   margin-bottom: 15px;
-  line-height: 25%;
-}
-@media only screen and (min-width:992px) {
-  .plat {
-    line-height: 30px;
-  }
 }
 .plat .nomPlat {
   font-size: 16px;
@@ -580,16 +574,15 @@ header .btnRetour {
 @media only screen and (min-width:992px) {
   .plat .nomPlat {
     font-size: 25px;
-    white-space: nowrap;
+    width: 435px;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
+    margin: 2% auto;
   }
 }
 .plat .infoPlat {
   font-size: 15px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .plat .infoPlat {
@@ -599,15 +592,112 @@ header .btnRetour {
 @media only screen and (min-width:992px) {
   .plat .infoPlat {
     font-size: 23px;
-    white-space: nowrap;
+    width: 435px;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
+    margin: 2% auto;
   }
 }
 .plat .infoPlat span {
   font-weight: bolder;
+  float: right;
 }
 
+.sectionMenuEntrees {
+  width: 100%;
+  visibility: hidden;
+  -webkit-animation: entrees 4s ease-in-out forwards;
+          animation: entrees 4s ease-in-out forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.sectionMenuPlats {
+  width: 100%;
+  visibility: hidden;
+  -webkit-animation: plats 4s ease-in-out forwards;
+          animation: plats 4s ease-in-out forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.sectionMenuDesserts {
+  width: 100%;
+  visibility: hidden;
+  -webkit-animation: desserts 4s ease-in-out forwards;
+          animation: desserts 4s ease-in-out forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+@-webkit-keyframes entrees {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+@keyframes entrees {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes plats {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+}
+@keyframes plats {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes desserts {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+}
+@keyframes desserts {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -894,99 +984,5 @@ form input {
     opacity: 0;
     z-index: -999;
     visibility: hidden;
-  }
-}
-.sectionMenuEntrees {
-  width: 100%;
-  visibility: hidden;
-  -webkit-animation: entrees 4s ease-in-out forwards;
-          animation: entrees 4s ease-in-out forwards;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.sectionMenuPlats {
-  width: 100%;
-  visibility: hidden;
-  -webkit-animation: plats 4s ease-in-out forwards;
-          animation: plats 4s ease-in-out forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-.sectionMenuDesserts {
-  width: 100%;
-  visibility: hidden;
-  -webkit-animation: desserts 4s ease-in-out forwards;
-          animation: desserts 4s ease-in-out forwards;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-@-webkit-keyframes entrees {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
-  }
-}
-
-@keyframes entrees {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
-  }
-}
-@-webkit-keyframes plats {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
-  }
-}
-@keyframes plats {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
-  }
-}
-@-webkit-keyframes desserts {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
-  }
-}
-@keyframes desserts {
-  from {
-    opacity: 0;
-    width: 0%;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-    visibility: visible;
   }
 }/*# sourceMappingURL=style.css.map */
