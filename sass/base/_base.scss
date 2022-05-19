@@ -28,9 +28,12 @@ h1 {
     border-bottom: 4px solid $couleur-tertiaire;
     width: 10%;
     padding-bottom: 2%;
+    @include tablette{
+        width: 11%;
+    }
     @include desktop {
         font-size: 25px;
-        width: 3%;
+        width: 13%;
     }
 }    
 // photos

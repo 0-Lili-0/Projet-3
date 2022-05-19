@@ -84,6 +84,7 @@ form {
           font-size: 21px;
         }
         @include desktop {
+          width: 11%;
           font-size: 30px;
         }
     }

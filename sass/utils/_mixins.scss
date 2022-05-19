@@ -20,6 +20,12 @@
     width: 60%;
     margin-bottom: 10%
 }
+// mixin gestion text
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 // media queries
 @mixin tablette {
     @media #{$medium-up} {

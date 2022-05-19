@@ -28,11 +28,11 @@ header {
         font-size: 130%;
         @include tablette {
             font-size: 170%;
-            top: 7%;
+            top: 8%;
           }
         @include desktop {
             font-size: 210%;
-            top: 12%;
+            top: 14%;
             left: 10%;
         }
     }
