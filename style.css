@@ -302,7 +302,7 @@ header .btnRetour {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   header .btnRetour {
     font-size: 170%;
-    top: 8%;
+    top: 7%;
   }
 }
 @media only screen and (min-width:992px) {
@@ -378,36 +378,36 @@ header .btnRetour {
     height: 105px;
   }
 }
-.carteRestaurant .infoPhoto .titre {
+.carteRestaurant .titre {
   font-size: 18px;
   width: 100%;
 }
 @media only screen and (min-width:992px) {
-  .carteRestaurant .infoPhoto .titre {
+  .carteRestaurant .titre {
     font-size: 33px;
     padding-bottom: 1%;
   }
 }
-.carteRestaurant .infoPhoto p {
+.carteRestaurant p {
   margin-top: 0%;
   width: 100%;
 }
 @media only screen and (min-width:992px) {
-  .carteRestaurant .infoPhoto p {
+  .carteRestaurant p {
     font-size: 26px;
     line-height: 46px;
   }
 }
-.carteRestaurant .infoPhoto a {
+.carteRestaurant a {
   text-decoration: none;
   color: black;
 }
-.carteRestaurant .infoPhoto .coeur {
+.carteRestaurant .coeur {
   position: relative;
   margin-top: -14%;
   font-size: 25px;
 }
-.carteRestaurant .infoPhoto .coeur .far {
+.carteRestaurant .coeur .far {
   position: absolute;
   margin-right: 51%;
   right: -45%;
@@ -415,17 +415,21 @@ header .btnRetour {
   font-size: 27px;
 }
 @media only screen and (min-width:992px) {
-  .carteRestaurant .infoPhoto .coeur .far {
+  .carteRestaurant .coeur .far {
     font-size: 40px;
     margin-top: 2%;
   }
 }
-.carteRestaurant .infoPhoto .coeur .fas {
+.carteRestaurant .coeur .far:hover {
+  opacity: 0;
+  z-index: -1;
+}
+.carteRestaurant .coeur .fas {
   position: absolute;
   margin-right: 51%;
   right: -45%;
   font-size: 27px;
-  background: linear-gradient(120deg, #9356DC, #ff79da);
+  background: linear-gradient(#9356DC, #ff79da);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -434,23 +438,23 @@ header .btnRetour {
   height: 0px;
 }
 @media only screen and (min-width:992px) {
-  .carteRestaurant .infoPhoto .coeur .fas {
+  .carteRestaurant .coeur .fas {
     font-size: 40px;
     margin-top: 2%;
   }
 }
-.carteRestaurant .infoPhoto .coeur .fas:hover {
+.carteRestaurant .coeur .fas:hover {
   opacity: 1;
   transition: 2s ease-in-out;
   height: 27px;
-  transform-origin: bottom left;
+  transform-origin: bottom;
 }
 @media only screen and (min-width:992px) {
-  .carteRestaurant .infoPhoto .coeur .fas:hover {
+  .carteRestaurant .coeur .fas:hover {
     height: 40px;
   }
 }
-.carteRestaurant .infoPhoto p {
+.carteRestaurant p {
   margin-top: 1%;
 }
 
@@ -466,7 +470,9 @@ header .btnRetour {
 .carteMenu .nomRestoMenu {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   position: relative;
+  padding-right: 5%;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .carteMenu .nomRestoMenu {
@@ -480,32 +486,40 @@ header .btnRetour {
   }
 }
 .carteMenu .nomRestoMenu .coeur {
-  position: absolute;
+  margin-top: 8%;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .carteMenu .nomRestoMenu .coeur {
+    margin-top: 3%;
+  }
+}
+@media only screen and (min-width:992px) {
+  .carteMenu .nomRestoMenu .coeur {
+    margin-top: 3%;
+  }
 }
 .carteMenu .nomRestoMenu .coeur .far {
   position: absolute;
   color: black;
   font-size: 30px;
-  top: 11px;
-  right: -404px;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .carteMenu .nomRestoMenu .coeur .far {
-    right: -840px;
+    font-size: 35px;
   }
 }
 @media only screen and (min-width:992px) {
   .carteMenu .nomRestoMenu .coeur .far {
     font-size: 40px;
-    top: 22px;
-    right: -1400px;
   }
 }
+.carteMenu .nomRestoMenu .coeur .far:hover {
+  opacity: 0;
+  z-index: -1;
+}
 .carteMenu .nomRestoMenu .coeur .fas {
-  position: absolute;
   font-size: 30px;
-  top: 11px;
-  right: -404px;
+  position: absolute;
   background: linear-gradient(120deg, #9356DC, #ff79da);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -515,21 +529,24 @@ header .btnRetour {
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .carteMenu .nomRestoMenu .coeur .fas {
-    right: -840px;
+    font-size: 35px;
   }
 }
 @media only screen and (min-width:992px) {
   .carteMenu .nomRestoMenu .coeur .fas {
     font-size: 40px;
-    top: 22px;
-    right: -1400px;
   }
 }
 .carteMenu .nomRestoMenu .coeur .fas:hover {
   opacity: 1;
-  transition: 2s ease-in-out;
+  z-index: 2;
+  transition: opacity linear 1s;
   height: 30px;
-  transform-origin: bottom;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .carteMenu .nomRestoMenu .coeur .fas:hover {
+    height: 35px;
+  }
 }
 @media only screen and (min-width:992px) {
   .carteMenu .nomRestoMenu .coeur .fas:hover {
@@ -559,20 +576,52 @@ header .btnRetour {
   background-color: white;
   font-size: 16px;
   border-radius: 20px;
+  position: relative;
   padding: 2% 3%;
   margin-bottom: 15px;
 }
-.plat .nomPlat {
+.plat .check {
+  background-color: #99e2d0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0%;
+  height: 110px;
+  border-radius: 0px 20px 20px 0px;
+}
+.plat .check:hover {
+  -webkit-animation: check 850ms ease-in-out alternate forwards;
+          animation: check 850ms ease-in-out alternate forwards;
+}
+.plat i {
+  color: white;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  transition: transform;
+  opacity: 0;
+}
+.plat i:hover {
+  -webkit-animation: rotation 850ms linear forwards;
+          animation: rotation 850ms linear forwards;
+}
+
+.nomPlat {
   font-size: 16px;
   font-weight: bold;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .plat .nomPlat {
+  .nomPlat {
     font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 @media only screen and (min-width:992px) {
-  .plat .nomPlat {
+  .nomPlat {
     font-size: 25px;
     width: 435px;
     overflow: hidden;
@@ -581,16 +630,30 @@ header .btnRetour {
     margin: 2% auto;
   }
 }
-.plat .infoPlat {
+
+.detailPlats {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: -2% auto;
+}
+
+.infoPlat {
   font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .plat .infoPlat {
+  .infoPlat {
     font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 @media only screen and (min-width:992px) {
-  .plat .infoPlat {
+  .infoPlat {
     font-size: 23px;
     width: 435px;
     overflow: hidden;
@@ -599,16 +662,21 @@ header .btnRetour {
     margin: 2% auto;
   }
 }
-.plat .infoPlat span {
+
+.prix {
   font-weight: bolder;
-  float: right;
+}
+
+.nomPlat div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sectionMenuEntrees {
   width: 100%;
   visibility: hidden;
-  -webkit-animation: entrees 4s ease-in-out forwards;
-          animation: entrees 4s ease-in-out forwards;
+  -webkit-animation: entrees 2s ease-in-out forwards;
+          animation: entrees 2s ease-in-out forwards;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
@@ -616,19 +684,19 @@ header .btnRetour {
 .sectionMenuPlats {
   width: 100%;
   visibility: hidden;
-  -webkit-animation: plats 4s ease-in-out forwards;
-          animation: plats 4s ease-in-out forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation: plats 2s ease-in-out forwards;
+          animation: plats 2s ease-in-out forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .sectionMenuDesserts {
   width: 100%;
   visibility: hidden;
-  -webkit-animation: desserts 4s ease-in-out forwards;
-          animation: desserts 4s ease-in-out forwards;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation: desserts 2s ease-in-out forwards;
+          animation: desserts 2s ease-in-out forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 @-webkit-keyframes entrees {
@@ -696,6 +764,58 @@ header .btnRetour {
     opacity: 1;
     width: 100%;
     visibility: visible;
+  }
+}
+@-webkit-keyframes check {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 25%;
+  }
+}
+@keyframes check {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 25%;
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes decalage {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 24%;
+  }
+}
+@keyframes decalage {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 24%;
   }
 }
 * {

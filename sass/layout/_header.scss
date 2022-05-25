@@ -28,7 +28,7 @@ header {
         font-size: 130%;
         @include tablette {
             font-size: 170%;
-            top: 8%;
+            top: 7%;
           }
         @include desktop {
             font-size: 210%;
@@ -37,3 +37,4 @@ header {
         }
     }
 }
+

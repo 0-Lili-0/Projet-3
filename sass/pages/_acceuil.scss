@@ -53,6 +53,7 @@
             border-radius: 0 0px 20px 20px;
             @include desktop {
                 height: 105px;
+            }
         }
         .titre {
             font-size: 18px;
@@ -89,13 +90,17 @@
                         font-size: 40px;
                         margin-top: 2%;
                     }
-                }
+                    &:hover {
+                        opacity: 0;
+                        z-index: -1;
+                    }
+                }    
                 .fas {
                     position: absolute;
                     margin-right: 51%;
                     right: -45%;
                     font-size: 27px;
-                    background: linear-gradient(120deg,$couleur-primaire,$couleur-secondaire);
+                    background: linear-gradient($couleur-primaire,$couleur-secondaire);
                     background-clip: border-box;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -110,7 +115,7 @@
                         opacity: 1;
                         transition: 2s ease-in-out;
                         height: 27px;
-                        transform-origin: bottom left; 
+                        transform-origin: bottom; 
                         @include desktop {
                             height: 40px;
                         }
@@ -120,5 +125,5 @@
         p {
                 margin-top: 1%;
         }
-}
-}
+        
+}   
