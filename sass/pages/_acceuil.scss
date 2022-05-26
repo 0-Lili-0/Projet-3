@@ -113,9 +113,8 @@
                     }
                     &:hover {
                         opacity: 1;
-                        transition: 2s ease-in-out;
-                        height: 27px;
-                        transform-origin: bottom; 
+                        transition: opacity linear 1s;
+                        height: 27px; 
                         @include desktop {
                             height: 40px;
                         }

@@ -12,13 +12,15 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         position: relative;
-        padding-right: 5%;
+        padding-right: 9%;
         @include tablette {
             font-size: 35px;
             width: 100%;
+            padding-right: 6%;
         }
         @include desktop {
             font-size: 50px;
+            padding-right: 6%;
         }
         .coeur {
             margin-top: 8%;
@@ -94,40 +96,34 @@
     background-color: white;
     font-size: 16px;
     border-radius: 20px;
-    position: relative;
-    padding: 2% 3%;
     margin-bottom: 15px;
+    display: flex;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    margin-top: 3%;
+    overflow: hidden;
+    &:hover > .box {
+        width: 23%;
+        transition: ease-in-out 1s;
+        .icone {
+            transform: rotate(360deg);
+        }
+    }
     @include tablette {
-
+        margin: 0;
+        margin-top: 3%;
+        @include ellipsis
     }
     @include desktop {
-        
+        margin: 0;
+        margin-top: 3%;
+        @include ellipsis
     }
-    .check {
-        background-color: $couleur-tertiaire;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 0%;
-        height: 110px;
-        border-radius: 0px 20px 20px 0px;
-        &:hover {
-            animation: check 850ms ease-in-out alternate forwards;
-        }
-    }
-        i {
-            color: white;
-            font-size: 26px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 110px;
-            transition: transform;
-            opacity: 0;
-            &:hover {
-                animation: rotation 850ms linear forwards;
-            }
-        }
+    .detailPlats {
+        flex-grow: 1;
+        width: 70%;
+        padding: 2%;
     }
     .nomPlat{
         font-size: 16px;
@@ -138,39 +134,46 @@
         }
         @include desktop {
             font-size: 25px;
-            width: 435px;
             @include ellipsis;
             margin: 2% auto;
         }
     }
-    .detailPlats {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        margin: -2% auto;
-    }
     .infoPlat {
         font-size: 15px;
-        
         @include tablette {
             font-size: 18px;
             @include ellipsis;
         }
         @include desktop {
             font-size: 23px;
-            width: 435px;
             @include ellipsis;
             margin: 2% auto;
         }
-        @include ellipsis;
-        
+        @include ellipsis; 
     }
     .prix {
         font-weight: bolder;
+        width: 10%;
+        padding-top: 9%;
+        @include tablette {
+            padding-top: 14%;
+        }
     }
-.nomPlat div{
+}
+.box {
     display: flex;
-    justify-content: space-between;
+    background-color: $couleur-tertiaire;
+    width: 0;
+    .check {
+        margin: auto;
+        background-color: $couleur-tertiaire;
+        .icone {
+            color: white;
+            font-size: 26px;
+            transition: transform 1s;
+            transform: rotate(180deg);
+        } 
+    }
 }
 // anim menu
 .sectionMenuEntrees {
@@ -224,30 +227,3 @@
         visibility: visible;
       }
     }
-    //animation check
-@keyframes check {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 25%;
-    }
-}
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-        opacity: 0;
-    }
-    to {
-        transform: rotate(360deg);
-        opacity: 1;
-    }
-}
-@keyframes decalage {
-    from {
-        margin-right: 0%;
-    }
-    to {
-        margin-right: 24%;
-    }
-}

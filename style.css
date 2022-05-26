@@ -35,7 +35,7 @@ h1 i {
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .titreMenu {
-    width: 11%;
+    width: 6%;
   }
 }
 @media only screen and (min-width:992px) {
@@ -202,7 +202,7 @@ body {
 
 footer {
   background-color: rgb(63, 63, 63);
-  margin: 0;
+  width: 100%;
   padding-bottom: 5%;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -275,6 +275,7 @@ header {
   padding: 5% 20%;
   width: 100%;
   box-shadow: 0px 6px 6px 3px rgba(179, 179, 179, 0.7);
+  z-index: 3;
 }
 header #logo {
   width: 190px;
@@ -302,7 +303,7 @@ header .btnRetour {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   header .btnRetour {
     font-size: 170%;
-    top: 7%;
+    top: 8%;
   }
 }
 @media only screen and (min-width:992px) {
@@ -445,9 +446,8 @@ header .btnRetour {
 }
 .carteRestaurant .coeur .fas:hover {
   opacity: 1;
-  transition: 2s ease-in-out;
+  transition: opacity linear 1s;
   height: 27px;
-  transform-origin: bottom;
 }
 @media only screen and (min-width:992px) {
   .carteRestaurant .coeur .fas:hover {
@@ -472,17 +472,19 @@ header .btnRetour {
   flex-flow: row nowrap;
   justify-content: space-between;
   position: relative;
-  padding-right: 5%;
+  padding-right: 9%;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .carteMenu .nomRestoMenu {
     font-size: 35px;
     width: 100%;
+    padding-right: 6%;
   }
 }
 @media only screen and (min-width:992px) {
   .carteMenu .nomRestoMenu {
     font-size: 50px;
+    padding-right: 6%;
   }
 }
 .carteMenu .nomRestoMenu .coeur {
@@ -576,44 +578,50 @@ header .btnRetour {
   background-color: white;
   font-size: 16px;
   border-radius: 20px;
-  position: relative;
-  padding: 2% 3%;
   margin-bottom: 15px;
-}
-.plat .check {
-  background-color: #99e2d0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 0%;
-  height: 110px;
-  border-radius: 0px 20px 20px 0px;
-}
-.plat .check:hover {
-  -webkit-animation: check 850ms ease-in-out alternate forwards;
-          animation: check 850ms ease-in-out alternate forwards;
-}
-.plat i {
-  color: white;
-  font-size: 26px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 110px;
-  transition: transform;
-  opacity: 0;
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  margin-top: 3%;
+  overflow: hidden;
 }
-.plat i:hover {
-  -webkit-animation: rotation 850ms linear forwards;
-          animation: rotation 850ms linear forwards;
+.plat:hover > .box {
+  width: 23%;
+  transition: ease-in-out 1s;
 }
-
-.nomPlat {
+.plat:hover > .box .icone {
+  transform: rotate(360deg);
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .plat {
+    margin: 0;
+    margin-top: 3%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (min-width:992px) {
+  .plat {
+    margin: 0;
+    margin-top: 3%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.plat .detailPlats {
+  flex-grow: 1;
+  width: 70%;
+  padding: 2%;
+}
+.plat .nomPlat {
   font-size: 16px;
   font-weight: bold;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .nomPlat {
+  .plat .nomPlat {
     font-size: 18px;
     overflow: hidden;
     white-space: nowrap;
@@ -621,31 +629,22 @@ header .btnRetour {
   }
 }
 @media only screen and (min-width:992px) {
-  .nomPlat {
+  .plat .nomPlat {
     font-size: 25px;
-    width: 435px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin: 2% auto;
   }
 }
-
-.detailPlats {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  margin: -2% auto;
-}
-
-.infoPlat {
+.plat .infoPlat {
   font-size: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .infoPlat {
+  .plat .infoPlat {
     font-size: 18px;
     overflow: hidden;
     white-space: nowrap;
@@ -653,23 +652,39 @@ header .btnRetour {
   }
 }
 @media only screen and (min-width:992px) {
-  .infoPlat {
+  .plat .infoPlat {
     font-size: 23px;
-    width: 435px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin: 2% auto;
   }
 }
-
-.prix {
+.plat .prix {
   font-weight: bolder;
+  width: 10%;
+  padding-top: 9%;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .plat .prix {
+    padding-top: 14%;
+  }
 }
 
-.nomPlat div {
+.box {
   display: flex;
-  justify-content: space-between;
+  background-color: #99e2d0;
+  width: 0;
+}
+.box .check {
+  margin: auto;
+  background-color: #99e2d0;
+}
+.box .check .icone {
+  color: white;
+  font-size: 26px;
+  transition: transform 1s;
+  transform: rotate(180deg);
 }
 
 .sectionMenuEntrees {
@@ -766,58 +781,6 @@ header .btnRetour {
     visibility: visible;
   }
 }
-@-webkit-keyframes check {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 25%;
-  }
-}
-@keyframes check {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 25%;
-  }
-}
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  to {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  to {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes decalage {
-  from {
-    margin-right: 0%;
-  }
-  to {
-    margin-right: 24%;
-  }
-}
-@keyframes decalage {
-  from {
-    margin-right: 0%;
-  }
-  to {
-    margin-right: 24%;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -833,7 +796,6 @@ body {
 
 #info {
   background-color: #F2F5F3;
-  margin: 0px;
   padding-bottom: 10%;
 }
 #info .titreSection {
@@ -844,22 +806,26 @@ body {
 
 form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+  width: 100%;
   background-color: #EBEBEB;
-  padding: 5% 10%;
+  padding: 5% 35%;
   font-size: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  form {
+    padding: 2% 36%;
+  }
 }
 @media only screen and (min-width:992px) {
   form {
-    left: 12%;
+    padding: 2% 40%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   form i {
     font-size: 30px;
-    margin-top: 4%;
   }
 }
 @media only screen and (min-width:992px) {
@@ -867,26 +833,18 @@ form {
     font-size: 40px;
   }
 }
-form input {
-  text-decoration: none;
-  border: none;
+form p {
   background-color: #EBEBEB;
-  text-indent: 10px;
   font-size: 17px;
-  width: 42%;
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  form input {
+  form p {
     font-size: 30px;
-    width: 40%;
-    margin-top: 5%;
   }
 }
 @media only screen and (min-width:992px) {
-  form input {
+  form p {
     font-size: 40px;
-    width: 53%;
-    margin-left: 1%;
   }
 }
 
@@ -948,6 +906,9 @@ form input {
   }
 }
 
+#fonctionnement {
+  width: 100%;
+}
 #fonctionnement .titreSection {
   margin: 5% auto 5% 5%;
   font-weight: bolder;

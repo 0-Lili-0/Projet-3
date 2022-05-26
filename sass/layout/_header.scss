@@ -8,6 +8,7 @@ header {
     padding: 5% 20%;
     width: 100%;
     box-shadow: $shadow-logo;
+    z-index: 3;
     #logo{
         width: 190px;
         position: relative;
@@ -28,7 +29,7 @@ header {
         font-size: 130%;
         @include tablette {
             font-size: 170%;
-            top: 7%;
+            top: 8%;
           }
         @include desktop {
             font-size: 210%;
