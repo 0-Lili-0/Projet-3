@@ -34,18 +34,14 @@ body {
 }
 form {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
     background-color: $fond-fonce;
     padding: $padding-head;
     font-size: 20px;
-    @include tablette {
-      padding: 2% 36%;
-    }
-    @include desktop {
-      padding: 2% 40%;
-    }
+    margin-right: 2%;
     i {
       @include tablette {
         font-size: 30px;
@@ -88,6 +84,7 @@ form {
         @include desktop {
           font-size: 60px;
           width: 59%;
+          margin-bottom: 7%;
         }
     }
     p{
@@ -117,7 +114,12 @@ form {
         @include titres-sections;
     }
 }
+
 .objet {
+  @include desktop {
+    position: relative;
+    width: 35%;
+  }
     i {
       color: gray;
       margin: auto 7%;
@@ -140,6 +142,9 @@ form {
       flex-flow: row wrap;
       justify-content: center;
       align-content: center;
+      padding-top: 1%;
+      padding-bottom: 8%;
+      gap: 1%;
     }
         .titreSection{
             @include titres-sections;
@@ -149,6 +154,7 @@ form {
             @include desktop {
               font-size: 40px;
               width: 100%;
+              margin-bottom: 0%;
             }
         }
 }

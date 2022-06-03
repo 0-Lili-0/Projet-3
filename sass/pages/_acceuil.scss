@@ -1,3 +1,5 @@
+@import "sass/utils/variables";
+@import "sass/utils/mixins";
 // carte restaurant
 .carteRestaurant {
     width: 90%;
@@ -12,7 +14,7 @@
     @include desktop {
         width: 40%;
         height: 200px;
-        margin: 5% 2%;
+        margin: 7% 2%;
     }
         .contenant{
             position: relative;
@@ -52,7 +54,7 @@
             box-shadow: $shadow;
             border-radius: 0 0px 20px 20px;
             @include desktop {
-                height: 105px;
+                height: 115px;
             }
         }
         .titre {
@@ -60,7 +62,7 @@
             width: 100%;
             @include desktop {
                 font-size: 33px;
-                padding-bottom: 1%;
+                padding-bottom: 5%;
             }
         }
         
@@ -69,7 +71,6 @@
             width: 100%;
             @include desktop {
                 font-size: 26px;
-                line-height: 46px;
             }
         }
         a {

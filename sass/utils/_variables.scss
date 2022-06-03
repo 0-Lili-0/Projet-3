@@ -21,14 +21,14 @@ $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
 
 // padding
-$padding-head: 5% 35%;
+$padding-head: 5% auto;
 $padding-info: 0% 2% 5% 2%;
 
 // breakpoint
 $mobil: 768px;
-$tablette-max: 992px;
+$tablette-max: 1300px;
 $tablette-min: 768px;
-$desktop: 992px;
+$desktop: 1300px;
 
 $medium-up: "only screen and (min-width: #{$tablette-min}) and (max-width: #{$tablette-max})";
 $large-up: "only screen and (min-width:#{$desktop})";

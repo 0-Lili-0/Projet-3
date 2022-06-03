@@ -20,13 +20,18 @@
         font-size: 20px;
     }
     @include desktop {
-        width: 30%;
-        font-size: 30px;
+        width: 25%;
+        font-size: 28px;
+        padding: 2% 6%;
+        margin: 5% auto 1% auto;
     }
         &--dégradé {
             background: linear-gradient(0deg, $couleur-primaire, $couleur-secondaire);
             color: white;
             margin-top: 15%;
+            @include desktop {
+                margin-top: 8%;
+            }
         }
         &--clair {
             justify-content: flex-start;
@@ -42,7 +47,7 @@
                 width: 65%;
             }
             @include desktop {
-                width: 68%;
+                padding: 8% 2%;
             }
             i {
                 @include tablette {
@@ -79,6 +84,11 @@ body {
 .compteur {
     text-align: center;
     position: relative;
+    @include desktop {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 6%;
+      }
     .objet::before{
         counter-increment: objet-compteur;
         content: counter(objet-compteur);
@@ -97,9 +107,9 @@ body {
             left: 16%;
         }
         @include desktop {
-            margin-top: 6%;
-            left: 15%;
-            font-size: 20px;
+            margin-top: 14%;
+            left: 5%;
+            font-size: 16px;
         }
   }
 }

@@ -13,7 +13,7 @@ p {
 h1 {
   font-size: 30px;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   h1 {
     font-size: 40px;
   }
@@ -21,7 +21,7 @@ h1 {
 h1 i {
   padding-left: 20%;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   h1 i {
     font-size: 40px;
   }
@@ -33,12 +33,12 @@ h1 i {
   width: 10%;
   padding-bottom: 2%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .titreMenu {
     width: 6%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .titreMenu {
     font-size: 25px;
     width: 13%;
@@ -54,7 +54,7 @@ h1 i {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .photo {
     height: 220px;
   }
@@ -70,12 +70,12 @@ h1 i {
   width: 100%;
   z-index: -1;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .photoResto {
     height: 500px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .photoResto {
     height: 850px;
   }
@@ -96,22 +96,29 @@ h1 i {
   font-weight: 300;
   font-size: 16px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .btn {
     width: 35%;
     font-size: 20px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .btn {
-    width: 30%;
-    font-size: 30px;
+    width: 25%;
+    font-size: 28px;
+    padding: 2% 6%;
+    margin: 5% auto 1% auto;
   }
 }
 .btn--dégradé {
   background: linear-gradient(0deg, #9356DC, #ff79da);
   color: white;
   margin-top: 15%;
+}
+@media only screen and (min-width:1300px) {
+  .btn--dégradé {
+    margin-top: 8%;
+  }
 }
 .btn--clair {
   justify-content: flex-start;
@@ -124,22 +131,22 @@ h1 i {
   margin-bottom: 4%;
   font-weight: bold;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .btn--clair {
     width: 65%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .btn--clair {
-    width: 68%;
+    padding: 8% 2%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .btn--clair i {
     font-size: 30px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .btn--clair i {
     font-size: 40px;
   }
@@ -172,6 +179,13 @@ body {
   text-align: center;
   position: relative;
 }
+@media only screen and (min-width:1300px) {
+  .compteur {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 6%;
+  }
+}
 .compteur .objet::before {
   counter-increment: objet-compteur;
   content: counter(objet-compteur);
@@ -186,17 +200,17 @@ body {
   left: 5%;
   z-index: 2;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .compteur .objet::before {
     margin-top: 6%;
     left: 16%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .compteur .objet::before {
-    margin-top: 6%;
-    left: 15%;
-    font-size: 20px;
+    margin-top: 14%;
+    left: 5%;
+    font-size: 16px;
   }
 }
 
@@ -205,7 +219,7 @@ footer {
   width: 100%;
   padding-bottom: 5%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   footer {
     width: 100%;
   }
@@ -218,14 +232,15 @@ footer h1 {
   font-weight: 100;
   margin-bottom: 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   footer h1 {
     font-size: 30px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   footer h1 {
     font-size: 40px;
+    padding: 3% 5%;
   }
 }
 footer nav ul {
@@ -241,14 +256,14 @@ footer li {
   color: white;
   line-height: 28px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   footer li {
     line-height: 40px;
     width: 60%;
     font-size: 25px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   footer li {
     font-size: 25px;
     line-height: 40px;
@@ -262,7 +277,7 @@ footer li i {
   margin-left: 0;
   width: 4%;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   footer li i {
     margin-right: -1%;
   }
@@ -282,12 +297,12 @@ header #logo {
   width: 190px;
   position: relative;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   header #logo {
     width: 350px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   header #logo {
     width: 450px;
   }
@@ -302,13 +317,13 @@ header .btnRetour {
   width: 4%;
   font-size: 130%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   header .btnRetour {
     font-size: 170%;
     top: 8%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   header .btnRetour {
     font-size: 210%;
     top: 14%;
@@ -324,12 +339,12 @@ header .btnRetour {
   border-radius: 20px;
   box-shadow: 6px 9px 12px 0px rgba(179, 179, 179, 0.5);
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteRestaurant {
     width: 45%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant {
     width: 40%;
     height: 200px;
@@ -358,7 +373,7 @@ header .btnRetour {
   right: 4%;
   z-index: 3;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant .contenant .legende {
     width: 23%;
     font-size: 19px;
@@ -376,29 +391,28 @@ header .btnRetour {
   box-shadow: 6px 9px 12px 0px rgba(179, 179, 179, 0.5);
   border-radius: 0 0px 20px 20px;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant .infoPhoto {
-    height: 105px;
+    height: 115px;
   }
 }
 .carteRestaurant .titre {
   font-size: 18px;
   width: 100%;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant .titre {
     font-size: 33px;
-    padding-bottom: 1%;
+    padding-bottom: 5%;
   }
 }
 .carteRestaurant p {
   margin-top: 0%;
   width: 100%;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant p {
     font-size: 26px;
-    line-height: 46px;
   }
 }
 .carteRestaurant a {
@@ -417,7 +431,7 @@ header .btnRetour {
   margin-top: 4%;
   font-size: 27px;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant .coeur .far {
     font-size: 40px;
     margin-top: 2%;
@@ -440,7 +454,7 @@ header .btnRetour {
   margin-top: 4%;
   height: 0px;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant .coeur .fas {
     font-size: 40px;
     margin-top: 2%;
@@ -451,7 +465,7 @@ header .btnRetour {
   transition: opacity linear 1s;
   height: 27px;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteRestaurant .coeur .fas:hover {
     height: 40px;
   }
@@ -469,6 +483,11 @@ header .btnRetour {
   position: relative;
   z-index: 1;
 }
+@media only screen and (min-width:1300px) {
+  .carteMenu {
+    margin-top: 39%;
+  }
+}
 .carteMenu .nomRestoMenu {
   display: flex;
   flex-flow: row nowrap;
@@ -476,14 +495,14 @@ header .btnRetour {
   position: relative;
   padding-right: 9%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteMenu .nomRestoMenu {
     font-size: 35px;
     width: 100%;
     padding-right: 6%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteMenu .nomRestoMenu {
     font-size: 50px;
     padding-right: 6%;
@@ -492,12 +511,12 @@ header .btnRetour {
 .carteMenu .nomRestoMenu .coeur {
   margin-top: 8%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteMenu .nomRestoMenu .coeur {
     margin-top: 3%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteMenu .nomRestoMenu .coeur {
     margin-top: 3%;
   }
@@ -507,12 +526,12 @@ header .btnRetour {
   color: black;
   font-size: 30px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteMenu .nomRestoMenu .coeur .far {
     font-size: 35px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteMenu .nomRestoMenu .coeur .far {
     font-size: 40px;
   }
@@ -531,12 +550,12 @@ header .btnRetour {
   opacity: 0;
   height: 0px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteMenu .nomRestoMenu .coeur .fas {
     font-size: 35px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteMenu .nomRestoMenu .coeur .fas {
     font-size: 40px;
   }
@@ -547,12 +566,12 @@ header .btnRetour {
   transition: opacity linear 1s;
   height: 30px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteMenu .nomRestoMenu .coeur .fas:hover {
     height: 35px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .carteMenu .nomRestoMenu .coeur .fas:hover {
     height: 40px;
   }
@@ -561,14 +580,14 @@ header .btnRetour {
 .SectionMenu {
   display: block;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .SectionMenu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .SectionMenu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -595,7 +614,7 @@ header .btnRetour {
 .plat:hover > .box .icone {
   transform: rotate(360deg);
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .plat {
     margin: 0;
     margin-top: 3%;
@@ -604,7 +623,7 @@ header .btnRetour {
     text-overflow: ellipsis;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .plat {
     margin: 0;
     margin-top: 3%;
@@ -622,7 +641,7 @@ header .btnRetour {
   font-size: 16px;
   font-weight: bold;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .plat .nomPlat {
     font-size: 18px;
     overflow: hidden;
@@ -630,7 +649,7 @@ header .btnRetour {
     text-overflow: ellipsis;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .plat .nomPlat {
     font-size: 25px;
     overflow: hidden;
@@ -645,7 +664,7 @@ header .btnRetour {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .plat .infoPlat {
     font-size: 18px;
     overflow: hidden;
@@ -653,7 +672,7 @@ header .btnRetour {
     text-overflow: ellipsis;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   .plat .infoPlat {
     font-size: 23px;
     overflow: hidden;
@@ -667,7 +686,7 @@ header .btnRetour {
   width: 10%;
   padding-top: 9%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   .plat .prix {
     padding-top: 14%;
   }
@@ -810,27 +829,27 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: auto;
   background-color: #EBEBEB;
   padding: 5% 35%;
   font-size: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   form {
     padding: 2% 36%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   form {
     padding: 2% 40%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   form i {
     font-size: 30px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   form i {
     font-size: 40px;
   }
@@ -839,12 +858,12 @@ form p {
   background-color: #EBEBEB;
   font-size: 17px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   form p {
     font-size: 30px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   form p {
     font-size: 40px;
   }
@@ -862,12 +881,12 @@ form p {
   font-size: 27px;
   font-weight: bolder;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   #texte .titreMenu {
     font-size: 21px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   #texte .titreMenu {
     width: 11%;
     font-size: 30px;
@@ -880,15 +899,16 @@ form p {
   width: 60%;
   margin-bottom: 10%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   #texte .titreInfo {
     font-size: 35px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   #texte .titreInfo {
     font-size: 60px;
     width: 59%;
+    margin-bottom: 7%;
   }
 }
 #texte p {
@@ -896,12 +916,12 @@ form p {
   width: 85%;
   margin: 0 auto 5% auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   #texte p {
     font-size: 26px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   #texte p {
     width: 74%;
     font-size: 42px;
@@ -916,18 +936,24 @@ form p {
   font-weight: bolder;
   font-size: 28px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   #fonctionnement .titreSection {
     font-size: 38px;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   #fonctionnement .titreSection {
     font-size: 40px;
     width: 90%;
   }
 }
 
+@media only screen and (min-width:1300px) {
+  .objet {
+    position: relative;
+    width: 35%;
+  }
+}
 .objet i {
   color: gray;
   margin: auto 7%;
@@ -938,7 +964,7 @@ form p {
   padding-top: 5%;
   padding-bottom: 10%;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   #restaurant {
     display: flex;
     flex-flow: row wrap;
@@ -946,12 +972,14 @@ form p {
     align-content: center;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   #restaurant {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    padding-top: 1%;
+    padding-bottom: 8%;
   }
 }
 #restaurant .titreSection {
@@ -959,15 +987,16 @@ form p {
   font-weight: bolder;
   font-size: 28px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
   #restaurant .titreSection {
     width: 100%;
   }
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1300px) {
   #restaurant .titreSection {
     font-size: 40px;
     width: 100%;
+    margin-bottom: 1%;
   }
 }
 

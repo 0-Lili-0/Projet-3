@@ -7,6 +7,12 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    @include tablette {
+        margin-top: 44%;
+    }
+    @include desktop {
+        margin-top: 39%;
+    }
     .nomRestoMenu {
         display: flex;
         flex-flow: row nowrap;
@@ -171,7 +177,7 @@
             color: white;
             font-size: 26px;
             transition: transform 1s;
-            transform: rotate(180deg);
+            transform: rotate(0deg);
         } 
     }
 }
