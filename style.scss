@@ -42,12 +42,19 @@ form {
     padding: $padding-head;
     font-size: 20px;
     margin-right: 2%;
+    @include tablette {
+      padding: 2% 25%;
+    }
+    @include desktop {
+      padding: 2% 35%;
+    }
     i {
       @include tablette {
         font-size: 30px;
       }
       @include desktop{
         font-size: 40px;
+        margin-right: 5%;
       }
     }
     p {
