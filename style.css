@@ -384,9 +384,8 @@ header .btnRetour {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  line-height: 36px;
+  line-height: 1.4;
   width: 100%;
-  height: 81px;
   font-size: 14px;
   padding: 1% 4%;
   box-shadow: 6px 9px 12px 0px #e5e5e5;
@@ -394,12 +393,12 @@ header .btnRetour {
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteRestaurant .infoPhoto {
-    line-height: 50px;
+    line-height: 0.9;
   }
 }
 @media only screen and (min-width:1300px) {
   .carteRestaurant .infoPhoto {
-    height: 115px;
+    line-height: 0.4;
   }
 }
 .carteRestaurant .titre {
@@ -427,8 +426,13 @@ header .btnRetour {
 }
 .carteRestaurant .coeur {
   position: relative;
-  margin-top: -14%;
+  margin-top: -8%;
   font-size: 25px;
+}
+@media only screen and (min-width:1300px) {
+  .carteRestaurant .coeur {
+    margin-top: -12%;
+  }
 }
 .carteRestaurant .coeur .far {
   position: absolute;
