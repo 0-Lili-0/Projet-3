@@ -1,5 +1,5 @@
-@import "sass/utils/variables";
-@import "sass/utils/mixins";
+@import "../utils/variables";
+@import "../utils/mixins";
 // carte restaurant
 .carteRestaurant {
     width: 90%;
@@ -53,15 +53,12 @@
             font-size: 14px;
             padding: 1% 4%;
             box-shadow: $shadow;
-            border-radius: 0 0px 20px 20px;
+            border-radius: 0px 0px 20px 20px;
             @include tablette {
                 line-height: 50px;
-                justify-content: center;
             }
             @include desktop {
                 height: 115px;
-                line-height: 50px;
-                justify-content: center;
             }
         }
         .titre {

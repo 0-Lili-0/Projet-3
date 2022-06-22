@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     padding: 4%;
-    width: 62%;
+    width: auto;
     max-width: 100%;
     margin: 5% auto 10% auto;
     border-radius: 30px;
@@ -100,7 +100,7 @@ body {
         border-radius: 50%;
         margin-top: 5%;
         position: absolute;
-        left: 5%;
+        left: 0%;
         z-index: 2;
         @include tablette {
             margin-top: 6%;
@@ -108,7 +108,7 @@ body {
         }
         @include desktop {
             margin-top: 14%;
-            left: 5%;
+            left: 0%;
             font-size: 16px;
         }
   }

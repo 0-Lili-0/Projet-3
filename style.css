@@ -87,12 +87,12 @@ h1 i {
   justify-content: center;
   align-items: center;
   padding: 4%;
-  width: 62%;
+  width: auto;
   max-width: 100%;
   margin: 5% auto 10% auto;
   border-radius: 30px;
   border: none;
-  box-shadow: 6px 9px 12px 0px rgba(179, 179, 179, 0.5);
+  box-shadow: 6px 9px 12px 0px #e5e5e5;
   font-weight: 300;
   font-size: 16px;
 }
@@ -104,7 +104,7 @@ h1 i {
 }
 @media only screen and (min-width:1300px) {
   .btn {
-    width: 25%;
+    width: 33%;
     font-size: 28px;
     padding: 2% 6%;
     margin: 5% auto 1% auto;
@@ -122,10 +122,10 @@ h1 i {
 }
 .btn--clair {
   justify-content: flex-start;
-  width: 85%;
+  width: 95%;
   padding: 6% 2%;
   border-radius: 15px;
-  background-color: #F2F5F3;
+  background-color: #f7f7f7;
   border: none;
   color: black;
   margin-bottom: 4%;
@@ -152,8 +152,8 @@ h1 i {
   }
 }
 .btn--clair:hover {
-  background-color: #fbeeff;
-  box-shadow: 6px 9px 12px 0px rgb(179, 179, 179);
+  background-color: #f5edff;
+  box-shadow: 6px 9px 12px 0px #e7e7e7;
 }
 .btn--clair:hover i {
   color: #9356DC;
@@ -197,7 +197,7 @@ body {
   border-radius: 50%;
   margin-top: 5%;
   position: absolute;
-  left: 5%;
+  left: 0%;
   z-index: 2;
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
@@ -209,13 +209,13 @@ body {
 @media only screen and (min-width:1300px) {
   .compteur .objet::before {
     margin-top: 14%;
-    left: 5%;
+    left: 0%;
     font-size: 16px;
   }
 }
 
 footer {
-  background-color: rgb(63, 63, 63);
+  background-color: #353535;
   width: 100%;
   padding-bottom: 5%;
 }
@@ -326,7 +326,7 @@ header .btnRetour {
 @media only screen and (min-width:1300px) {
   header .btnRetour {
     font-size: 210%;
-    top: 14%;
+    top: 13%;
     left: 10%;
   }
 }
@@ -337,7 +337,7 @@ header .btnRetour {
   margin-bottom: 5%;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 6px 9px 12px 0px rgba(179, 179, 179, 0.5);
+  box-shadow: 6px 9px 12px 0px #e5e5e5;
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
   .carteRestaurant {
@@ -348,7 +348,7 @@ header .btnRetour {
   .carteRestaurant {
     width: 40%;
     height: 200px;
-    margin: 5% 2%;
+    margin: 6% 2%;
   }
 }
 .carteRestaurant .contenant {
@@ -362,7 +362,7 @@ header .btnRetour {
 }
 .carteRestaurant .contenant .legende {
   background-color: #99e2d0;
-  color: #00693E;
+  color: #008766;
   width: 20%;
   font-size: 14px;
   padding: 5px 2px;
@@ -383,13 +383,19 @@ header .btnRetour {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   line-height: 36px;
   width: 100%;
   height: 81px;
   font-size: 14px;
   padding: 1% 4%;
-  box-shadow: 6px 9px 12px 0px rgba(179, 179, 179, 0.5);
-  border-radius: 0 0px 20px 20px;
+  box-shadow: 6px 9px 12px 0px #e5e5e5;
+  border-radius: 0px 0px 20px 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .carteRestaurant .infoPhoto {
+    line-height: 50px;
+  }
 }
 @media only screen and (min-width:1300px) {
   .carteRestaurant .infoPhoto {
@@ -475,13 +481,18 @@ header .btnRetour {
 }
 
 .carteMenu {
-  background-color: #F2F5F3;
+  background-color: #f7f7f7;
   margin-top: 50%;
   padding: 2% 5% 10% 5%;
   border-radius: 40px 40px 0px 0px;
   width: 100%;
   position: relative;
   z-index: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .carteMenu {
+    margin-top: 36%;
+  }
 }
 @media only screen and (min-width:1300px) {
   .carteMenu {
@@ -688,7 +699,7 @@ header .btnRetour {
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
   .plat .prix {
-    padding-top: 14%;
+    padding-top: 10%;
   }
 }
 
@@ -705,7 +716,7 @@ header .btnRetour {
   color: white;
   font-size: 26px;
   transition: transform 1s;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .sectionMenuEntrees {
@@ -816,7 +827,7 @@ body {
 }
 
 #info {
-  background-color: #F2F5F3;
+  background-color: #f7f7f7;
   padding-bottom: 10%;
 }
 #info .titreSection {
@@ -827,22 +838,15 @@ body {
 
 form {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
   width: auto;
-  background-color: #EBEBEB;
-  padding: 5% 35%;
+  background-color: #eaeaea;
+}
+form i {
+  margin-right: 5%;
   font-size: 20px;
-}
-@media only screen and (min-width: 768px) and (max-width: 1300px) {
-  form {
-    padding: 2% 36%;
-  }
-}
-@media only screen and (min-width:1300px) {
-  form {
-    padding: 2% 40%;
-  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
   form i {
@@ -855,7 +859,7 @@ form {
   }
 }
 form p {
-  background-color: #EBEBEB;
+  background-color: #eaeaea;
   font-size: 17px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
@@ -929,7 +933,7 @@ form p {
 }
 
 #fonctionnement {
-  width: 100%;
+  width: auto;
 }
 #fonctionnement .titreSection {
   margin: 5% auto 5% 5%;
@@ -944,7 +948,6 @@ form p {
 @media only screen and (min-width:1300px) {
   #fonctionnement .titreSection {
     font-size: 40px;
-    width: 90%;
   }
 }
 
@@ -960,7 +963,7 @@ form p {
 }
 
 #restaurant {
-  background-color: #F2F5F3;
+  background-color: #f7f7f7;
   padding-top: 5%;
   padding-bottom: 10%;
 }
@@ -980,6 +983,7 @@ form p {
     align-content: center;
     padding-top: 1%;
     padding-bottom: 8%;
+    gap: 1%;
   }
 }
 #restaurant .titreSection {
@@ -996,7 +1000,7 @@ form p {
   #restaurant .titreSection {
     font-size: 40px;
     width: 100%;
-    margin-bottom: 1%;
+    margin-bottom: 0%;
   }
 }
 
@@ -1008,7 +1012,7 @@ form p {
 .loader {
   display: block;
   position: fixed;
-  background-color: #fbeeff;
+  background-color: #f5edff;
   width: 100%;
   height: 100%;
   -webkit-animation: loader 4s linear;
@@ -1027,7 +1031,7 @@ form p {
   border-radius: 50%;
   border-bottom-color: #ff79da;
   border-right-color: #99e2d0;
-  border-top-color: rgb(63, 63, 63);
+  border-top-color: #353535;
   box-sizing: border-box;
   background-color: white;
   position: absolute;
