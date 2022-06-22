@@ -4,21 +4,22 @@ $couleur-secondaire: #ff79da;
 $couleur-tertiaire: #99e2d0;
 
 //couleur hover
-$couleur-primaire-hover: #fbeeff;
-$shadow-hover: 6px 9px 12px 0px rgba(179,179,179,100%);
+$couleur-primaire-hover: #f5edff;
+$shadow-hover: 6px 9px 12px 0px #e7e7e7;
 
 // couleur fond
-$fond-fonce: #EBEBEB;
-$fond-clair: #F2F5F3;
-$footer: rgb(63, 63, 63);
+$fond-fonce: #eaeaea;
+$fond-clair: #f7f7f7;
+$footer: #353535;
 
 // ombre
-$shadow: 6px 9px 12px 0px rgba(179,179,179,0.5);
+$shadow: 6px 9px 12px 0px #e5e5e5;
 $shadow-logo: 0px 6px 6px 3px rgba(179,179,179,0.7);
 
 // police du site
 $police-titre: 'Shrikhand', cursive;
 $police-texte: 'Roboto', sans-serif;
+$police-new: #008766;
 
 // padding
 $padding-head: 5% auto;

@@ -8,7 +8,7 @@
     position: relative;
     z-index: 1;
     @include tablette {
-        margin-top: 44%;
+        margin-top: 36%;
     }
     @include desktop {
         margin-top: 39%;
@@ -162,7 +162,7 @@
         width: 10%;
         padding-top: 9%;
         @include tablette {
-            padding-top: 14%;
+            padding-top: 10%;
         }
     }
 }

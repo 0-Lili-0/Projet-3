@@ -39,22 +39,21 @@ form {
     align-items: center;
     width: auto;
     background-color: $fond-fonce;
-    padding: $padding-head;
+    padding: auto;
     font-size: 20px;
-    margin-right: 2%;
     @include tablette {
-      padding: 2% 25%;
+      padding: 2% 40%;
     }
     @include desktop {
-      padding: 2% 35%;
+      padding: 2% 38%;
     }
     i {
+      margin-right: 5%;
       @include tablette {
         font-size: 30px;
       }
       @include desktop{
         font-size: 40px;
-        margin-right: 5%;
       }
     }
     p {
@@ -109,14 +108,13 @@ form {
 }
 // section fonctionnement
 #fonctionnement {
-  width: 100%;
+  width: auto;
     .titreSection {
         @include tablette {
-            font-size: 38px;
+          font-size: 38px;
         }
         @include desktop {
           font-size: 40px;
-          width: 90%;
         }
         @include titres-sections;
     }
